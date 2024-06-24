@@ -1,0 +1,30 @@
+Circuit: * C:\Users\NOR0185869\Documents\ltspice\DE_PROJECT\schematic\System.asc
+
+Warning: Multiple definitions of model "d1:x2:pmos" Type: BSIM4
+Warning: Multiple definitions of model "d1:x2:nmos" Type: BSIM4
+Warning: Multiple definitions of model "d1:x1:pmos" Type: BSIM4
+Warning: Multiple definitions of model "d1:x1:nmos" Type: BSIM4
+Warning: Multiple definitions of model "d0:x2:pmos" Type: BSIM4
+Warning: Multiple definitions of model "d0:x2:nmos" Type: BSIM4
+Warning: Multiple definitions of model "d0:x1:pmos" Type: BSIM4
+Warning: Multiple definitions of model "d0:x1:nmos" Type: BSIM4
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon May 29 00:09:48 2023
+Total elapsed time: 2.423 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7970
+traniter = 7946
+tranpoints = 2565
+accept = 2210
+rejected = 355
+matrix size = 823
+fillins = 108
+solver = Normal
+Thread vector: 386.6/218.4[8] 45.7/27.2[8] 19.8/12.0[8] 4.9/6.3[1]  2592/500
+Matrix Compiler1: 121.23 KB object code size  49.4/26.5/[9.3]
+Matrix Compiler2: 100.67 KB object code size  21.4/20.8/[7.9]
+

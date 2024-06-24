@@ -1,0 +1,24 @@
+*** SPICE deck for cell AndGate{lay} from library Project
+*** Created on Mon May 29, 2023 21:59:21
+*** Last revised on Mon May 29, 2023 22:22:58
+*** Written on Mon May 29, 2023 22:23:31 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: AndGate{lay}
+Mnmos@0 net@5 IN1 gnd gnd nMos L=0.4U W=2.4U AS=8.52P AD=1.2P PS=20.2U PD=3.4U
+Mnmos@1 net@1 IN2 net@5 gnd nMos L=0.4U W=2.4U AS=1.2P AD=2.48P PS=3.4U PD=5.267U
+Mnmos@2 OUT net@1 gnd gnd nMos L=0.4U W=2.4U AS=8.52P AD=3.12P PS=20.2U PD=7.4U
+Mpmos@0 net@1 IN1 vdd vdd pMos L=0.4U W=2.4U AS=6.453P AD=2.48P PS=15.4U PD=5.267U
+Mpmos@1 vdd IN2 net@1 vdd pMos L=0.4U W=2.4U AS=2.48P AD=6.453P PS=5.267U PD=15.4U
+Mpmos@2 OUT net@1 vdd vdd pMos L=0.4U W=2.4U AS=6.453P AD=3.12P PS=15.4U PD=7.4U
+
+* Spice Code nodes in cell cell 'AndGate{lay}'
+vdd VDD 0 DC 1.1
+vin IN1 0 PULSE(0 1.1 0n 1n 1n 20n 40n 10)
+vin1 IN2 0 PULSE(0 1.1 0n 1n 1n 40n 80n 10)
+cload OUT 0 50fF
+.tran 0 160n
+.include C:\Users\NOR0185869\Downloads\Tech_models.txt
+.END
+.END

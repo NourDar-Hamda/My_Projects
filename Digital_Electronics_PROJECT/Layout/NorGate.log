@@ -1,0 +1,21 @@
+Circuit: *** SPICE deck for cell NorGate{lay} from library Project
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon May 29 22:44:58 2023
+Total elapsed time: 0.054 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2754
+traniter = 2739
+tranpoints = 1246
+accept = 1186
+rejected = 60
+matrix size = 24
+fillins = 0
+solver = Normal
+Matrix Compiler1: 2.16 KB object code size  0.7/0.4/[0.2]
+Matrix Compiler2: 2.62 KB object code size  0.4/0.5/[0.3]
+

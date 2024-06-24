@@ -1,0 +1,228 @@
+*** SPICE deck for cell System{lay} from library Project
+*** Created on Tue May 30, 2023 17:23:58
+*** Last revised on Tue May 30, 2023 18:01:19
+*** Written on Tue May 30, 2023 18:04:50 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+*** WARNING: no ground connection for N-transistor wells in cell 'System{lay}'
+
+*** TOP LEVEL CELL: System{lay}
+Mnmos@0 Bit1 Write net@426 gnd nMos L=0.6U W=3.6U AS=5.67P AD=7.02P PS=8.55U PD=11.1U
+Mnmos@1 Q2 net@19 Bit1 gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@2 net@26 Q2 Q2_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=19.86P PS=11.1U PD=30.413U
+Mnmos@3 Q2 Q2_bar net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@4 Bit1_bar net@19 Q2_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@5 net@428 Write Bit1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=5.67P PS=11.1U PD=8.55U
+Mnmos@6 net@314 Bit1 Bit1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mnmos@7 Bit1 Bit1_bar net@314 gnd nMos L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mnmos@8 net@314 SE_bar net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@9 Q3 net@118 Bit1 gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@10 net@26 Q3 Q3_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=19.86P PS=11.1U PD=30.413U
+Mnmos@11 Q3 Q3_bar net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@12 Bit1_bar net@118 Q3_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@13 Bit0 Write net@202 gnd nMos L=0.6U W=3.6U AS=5.67P AD=6.84P PS=8.55U PD=11U
+Mnmos@14 Q0 net@19 Bit0 gnd nMos L=0.6U W=3.6U AS=6.84P AD=7.02P PS=11U PD=11.1U
+Mnmos@15 net@26 Q0 Q0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=19.86P PS=11.1U PD=30.413U
+Mnmos@16 Q0 Q0_bar net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@17 Bit0_bar net@19 Q0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@18 net@204 Write Bit0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=5.67P PS=11.1U PD=8.55U
+Mnmos@19 net@27 Bit0 Bit0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mnmos@20 Bit0 Bit0_bar net@27 gnd nMos L=0.6U W=3.6U AS=5.22P AD=6.84P PS=7.7U PD=11U
+Mnmos@21 net@27 SE_bar net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@22 Q1 net@118 Bit0 gnd nMos L=0.6U W=3.6U AS=6.84P AD=7.02P PS=11U PD=11.1U
+Mnmos@23 net@26 Q1 Q1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=19.86P PS=11.1U PD=30.413U
+Mnmos@24 Q1 Q1_bar net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@25 Bit0_bar net@118 Q1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@77 net@1589 A1 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@78 net@1602 B1 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@79 net@1631 B1 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=2.7P PS=30.413U PD=5.1U
+Mnmos@80 net@1611 net@1589 net@1631 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@81 net@1646 net@1611 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@82 net@1682 net@1602 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=2.7P PS=30.413U PD=5.1U
+Mnmos@83 net@1662 A1 net@1682 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@84 net@1697 net@1662 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@85 net@1713 net@1697 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@86 net@26 net@1646 net@1713 gnd nMos L=0.6U W=3.6U AS=5.22P AD=19.86P PS=7.7U PD=30.413U
+Mnmos@87 net@1749 net@1713 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@88 net@1827 net@1830 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@89 net@1825 net@2079 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@90 net@1828 net@1827 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@91 net@26 net@1833 net@1828 gnd nMos L=0.6U W=3.6U AS=5.22P AD=19.86P PS=7.7U PD=30.413U
+Mnmos@92 net@1833 net@1825 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@93 net@26 net@1828 net@1833 gnd nMos L=0.6U W=3.6U AS=5.22P AD=19.86P PS=7.7U PD=30.413U
+Mnmos@94 net@2038 net@1900 net@1830 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@95 net@26 CLK net@2038 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@96 net@2322 net@2174 net@2079 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@97 net@26 CLK net@2322 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@98 net@1896 net@1934 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@99 net@1886 net@1894 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@100 net@204 net@1896 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.67P PS=30.413U PD=8.55U
+Mnmos@101 net@26 net@202 net@204 gnd nMos L=0.6U W=3.6U AS=5.67P AD=19.86P PS=8.55U PD=30.413U
+Mnmos@102 net@202 net@1886 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.67P PS=30.413U PD=8.55U
+Mnmos@103 net@26 net@204 net@202 gnd nMos L=0.6U W=3.6U AS=5.67P AD=19.86P PS=8.55U PD=30.413U
+Mnmos@104 net@2108 net@1833 net@1934 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@105 net@26 net@1890 net@2108 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@106 net@2150 net@1828 net@1894 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@107 net@26 net@1890 net@2150 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@108 net@2174 net@1900 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@109 net@1890 CLK net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@110 net@2391 A0 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@111 net@2404 B0 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@112 net@2433 B0 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=2.7P PS=30.413U PD=5.1U
+Mnmos@113 net@2413 net@2391 net@2433 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@114 net@2448 net@2413 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@115 net@2484 net@2404 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=2.7P PS=30.413U PD=5.1U
+Mnmos@116 net@2464 A0 net@2484 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@117 net@2499 net@2464 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@118 net@2515 net@2499 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@119 net@26 net@2448 net@2515 gnd nMos L=0.6U W=3.6U AS=5.22P AD=19.86P PS=7.7U PD=30.413U
+Mnmos@120 net@1900 net@2515 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@121 net@2629 net@2632 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@122 net@2627 net@2881 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@123 net@2630 net@2629 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@124 net@26 net@2635 net@2630 gnd nMos L=0.6U W=3.6U AS=5.22P AD=19.86P PS=7.7U PD=30.413U
+Mnmos@125 net@2635 net@2627 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.22P PS=30.413U PD=7.7U
+Mnmos@126 net@26 net@2630 net@2635 gnd nMos L=0.6U W=3.6U AS=5.22P AD=19.86P PS=7.7U PD=30.413U
+Mnmos@127 net@2840 net@1749 net@2632 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@128 net@26 CLK net@2840 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@129 net@3124 net@2976 net@2881 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@130 net@26 CLK net@3124 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@131 net@2698 net@2736 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@132 net@2688 net@2696 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@133 net@428 net@2698 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.67P PS=30.413U PD=8.55U
+Mnmos@134 net@26 net@426 net@428 gnd nMos L=0.6U W=3.6U AS=5.67P AD=19.86P PS=8.55U PD=30.413U
+Mnmos@135 net@426 net@2688 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=5.67P PS=30.413U PD=8.55U
+Mnmos@136 net@26 net@428 net@426 gnd nMos L=0.6U W=3.6U AS=5.67P AD=19.86P PS=8.55U PD=30.413U
+Mnmos@137 net@2910 net@2635 net@2736 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@138 net@26 net@2692 net@2910 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@139 net@2952 net@2630 net@2696 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@140 net@26 net@2692 net@2952 gnd nMos L=0.6U W=3.6U AS=2.7P AD=19.86P PS=5.1U PD=30.413U
+Mnmos@141 net@2976 net@1749 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@142 net@2692 CLK net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@143 net@3298 En net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=2.7P PS=30.413U PD=5.1U
+Mnmos@144 net@3238 net@3246 net@3298 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@145 net@19 net@3238 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@146 net@3354 En net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=2.7P PS=30.413U PD=5.1U
+Mnmos@147 net@3332 ROW# net@3354 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@148 net@118 net@3332 net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mnmos@149 net@3246 ROW# net@26 gnd nMos L=0.6U W=3.6U AS=19.86P AD=7.02P PS=30.413U PD=11.1U
+Mpmos@0 vdd PC Bit1 vdd pMos L=0.6U W=3.6U AS=7.02P AD=17.571P PS=11.1U PD=26.256U
+Mpmos@1 vdd Q2 Q2_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=17.571P PS=11.1U PD=26.256U
+Mpmos@2 Q2 Q2_bar vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@3 Bit1_bar PC vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@4 net@39 SE vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@5 net@39 Bit1 Bit1_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@6 Bit1 Bit1_bar net@39 vdd pMos L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@7 vdd Q3 Q3_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=17.571P PS=11.1U PD=26.256U
+Mpmos@8 Q3 Q3_bar vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@9 vdd PC Bit0 vdd pMos L=0.6U W=3.6U AS=6.84P AD=17.571P PS=11U PD=26.256U
+Mpmos@10 vdd Q0 Q0_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=17.571P PS=11.1U PD=26.256U
+Mpmos@11 Q0 Q0_bar vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@12 Bit0_bar PC vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@13 net@22 SE vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@14 net@22 Bit0 Bit0_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@15 Bit0 Bit0_bar net@22 vdd pMos L=0.6U W=3.6U AS=5.22P AD=6.84P PS=7.7U PD=11U
+Mpmos@16 vdd Q1 Q1_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=17.571P PS=11.1U PD=26.256U
+Mpmos@17 Q1 Q1_bar vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@69 net@1589 A1 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@70 net@1602 B1 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@71 net@1611 B1 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.58P PS=26.256U PD=7.9U
+Mpmos@72 vdd net@1589 net@1611 vdd pMos L=0.6U W=3.6U AS=5.58P AD=17.571P PS=7.9U PD=26.256U
+Mpmos@73 net@1646 net@1611 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@74 net@1662 net@1602 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.58P PS=26.256U PD=7.9U
+Mpmos@75 vdd A1 net@1662 vdd pMos L=0.6U W=3.6U AS=5.58P AD=17.571P PS=7.9U PD=26.256U
+Mpmos@76 net@1697 net@1662 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@77 net@1722 net@1697 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=2.7P PS=26.256U PD=5.1U
+Mpmos@78 net@1713 net@1646 net@1722 vdd pMos L=0.6U W=3.6U AS=2.7P AD=5.22P PS=5.1U PD=7.7U
+Mpmos@79 net@1749 net@1713 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@80 net@1827 net@1830 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@81 net@1825 net@2079 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@82 net@2259 net@1827 net@1828 vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@83 vdd net@1833 net@2259 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@84 net@1834 net@1825 net@1833 vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@85 vdd net@1828 net@1834 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@86 net@1830 net@1900 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@87 vdd CLK net@1830 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@88 net@2079 net@2174 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@89 vdd CLK net@2079 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@90 net@1896 net@1934 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@91 net@1886 net@1894 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@92 net@1958 net@1896 net@204 vdd pMos L=0.6U W=3.6U AS=5.67P AD=2.16P PS=8.55U PD=4.8U
+Mpmos@93 vdd net@202 net@1958 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@94 net@2030 net@1886 net@202 vdd pMos L=0.6U W=3.6U AS=5.67P AD=2.16P PS=8.55U PD=4.8U
+Mpmos@95 vdd net@204 net@2030 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@96 net@1934 net@1833 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@97 vdd net@1890 net@1934 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@98 net@1894 net@1828 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@99 vdd net@1890 net@1894 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@100 net@2174 net@1900 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@101 net@1890 CLK vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@102 net@2391 A0 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@103 net@2404 B0 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@104 net@2413 B0 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.58P PS=26.256U PD=7.9U
+Mpmos@105 vdd net@2391 net@2413 vdd pMos L=0.6U W=3.6U AS=5.58P AD=17.571P PS=7.9U PD=26.256U
+Mpmos@106 net@2448 net@2413 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@107 net@2464 net@2404 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.58P PS=26.256U PD=7.9U
+Mpmos@108 vdd A0 net@2464 vdd pMos L=0.6U W=3.6U AS=5.58P AD=17.571P PS=7.9U PD=26.256U
+Mpmos@109 net@2499 net@2464 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@110 net@2524 net@2499 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=2.7P PS=26.256U PD=5.1U
+Mpmos@111 net@2515 net@2448 net@2524 vdd pMos L=0.6U W=3.6U AS=2.7P AD=5.22P PS=5.1U PD=7.7U
+Mpmos@112 net@1900 net@2515 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@113 net@2629 net@2632 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@114 net@2627 net@2881 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@115 net@3061 net@2629 net@2630 vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@116 vdd net@2635 net@3061 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@117 net@2636 net@2627 net@2635 vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@118 vdd net@2630 net@2636 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@119 net@2632 net@1749 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@120 vdd CLK net@2632 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@121 net@2881 net@2976 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@122 vdd CLK net@2881 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@123 net@2698 net@2736 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@124 net@2688 net@2696 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@125 net@2760 net@2698 net@428 vdd pMos L=0.6U W=3.6U AS=5.67P AD=2.16P PS=8.55U PD=4.8U
+Mpmos@126 vdd net@426 net@2760 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@127 net@2832 net@2688 net@426 vdd pMos L=0.6U W=3.6U AS=5.67P AD=2.16P PS=8.55U PD=4.8U
+Mpmos@128 vdd net@428 net@2832 vdd pMos L=0.6U W=3.6U AS=2.16P AD=17.571P PS=4.8U PD=26.256U
+Mpmos@129 net@2736 net@2635 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@130 vdd net@2692 net@2736 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@131 net@2696 net@2630 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.22P PS=26.256U PD=7.7U
+Mpmos@132 vdd net@2692 net@2696 vdd pMos L=0.6U W=3.6U AS=5.22P AD=17.571P PS=7.7U PD=26.256U
+Mpmos@133 net@2976 net@1749 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@134 net@2692 CLK vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@135 net@3238 En vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.58P PS=26.256U PD=7.9U
+Mpmos@136 vdd net@3246 net@3238 vdd pMos L=0.6U W=3.6U AS=5.58P AD=17.571P PS=7.9U PD=26.256U
+Mpmos@137 net@19 net@3238 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@138 net@3332 En vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=5.58P PS=26.256U PD=7.9U
+Mpmos@139 vdd ROW# net@3332 vdd pMos L=0.6U W=3.6U AS=5.58P AD=17.571P PS=7.9U PD=26.256U
+Mpmos@140 net@118 net@3332 vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+Mpmos@141 net@3246 ROW# vdd vdd pMos L=0.6U W=3.6U AS=17.571P AD=7.02P PS=26.256U PD=11.1U
+
+* Spice Code nodes in cell cell 'System{lay}'
+vdd VDD 0 DC 1.1
+vin A0 0 PULSE(1.1 0 0 1n 1n 20n 40n 100)
+vin1 A1 0 PULSE(0 1.1 0 1n 1n 40n 80n 100)
+vin2 B0 0 PULSE(1.1 0 0 1n 1n 40n 80n 100)
+vin3 B1 0 PULSE(0 1.1 0 1n 1n 80n 160n 100)
+vin4 PC 0 PULSE(1.1 0 0 100p 100p 2.5n 25n 100)
+vin5 Write 0 PULSE(0 1.1 4n 100p 100p 1.25n 12.5n) 
+vin6 SE 0 PULSE(0 1.1 2n 100p 100p 750p 25n)
+vin7 SE_bar 0 PULSE(1.1 0 2n 100p 100p 750p 25n)
+vin8 CLK 0 PULSE(0 1.1 0 1n 1n 20n 40n 100)
+vin9 En 0 PULSE(0 1.1 0 1n 1n 20n 40n 100)
+vin10 ROW#  0 PULSE(0 1.1 0 1n 1n 20n 40n 100)
+cload Q0 0 0fF
+cload2 Q0_bar 0 0fF
+cload3 Bit0 0 0fF
+cload4 Bit0_bar 0 0fF
+cload5 Q1 0 0fF
+cload6 Q1_bar 0 0fF
+cload7 Q2 0 0fF
+cload8 Q2_bar 0 0fF
+cload9 Bit1 0 0fF
+cload10 Bit1_bar 0 0fF
+cload11 Q3 0 0fF
+cload12 Q3_bar 0 0fF
+.tran 0 300n 
+.include C:\Users\NOR0185869\Downloads\Tech_models.txt
+.END

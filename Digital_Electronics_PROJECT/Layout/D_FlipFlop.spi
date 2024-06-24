@@ -1,0 +1,62 @@
+*** SPICE deck for cell D_FlipFlop{lay} from library Project
+*** Created on Mon May 29, 2023 23:51:21
+*** Last revised on Tue May 30, 2023 00:10:30
+*** Written on Tue May 30, 2023 00:10:52 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: D_FlipFlop{lay}
+Mnmos@0 net@9 net@31 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=7.02P PS=24.633U PD=11.1U
+Mnmos@1 net@0 net@7 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=7.02P PS=24.633U PD=11.1U
+Mnmos@2 net@37 net@9 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=5.22P PS=24.633U PD=7.7U
+Mnmos@3 gnd net@19 net@37 gnd nMos L=0.6U W=3.6U AS=5.22P AD=15.42P PS=7.7U PD=24.633U
+Mnmos@4 net@19 net@0 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=5.22P PS=24.633U PD=7.7U
+Mnmos@5 gnd net@37 net@19 gnd nMos L=0.6U W=3.6U AS=5.22P AD=15.42P PS=7.7U PD=24.633U
+Mnmos@6 net@290 D net@31 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@7 gnd CLK net@290 gnd nMos L=0.6U W=3.6U AS=2.7P AD=15.42P PS=5.1U PD=24.633U
+Mnmos@8 net@546 net@412 net@7 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@9 gnd CLK net@546 gnd nMos L=0.6U W=3.6U AS=2.7P AD=15.42P PS=5.1U PD=24.633U
+Mnmos@10 net@162 net@197 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=7.02P PS=24.633U PD=11.1U
+Mnmos@11 net@153 net@160 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=7.02P PS=24.633U PD=11.1U
+Mnmos@12 Q_bar net@162 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=5.22P PS=24.633U PD=7.7U
+Mnmos@13 gnd Q Q_bar gnd nMos L=0.6U W=3.6U AS=5.22P AD=15.42P PS=7.7U PD=24.633U
+Mnmos@14 Q net@153 gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=5.22P PS=24.633U PD=7.7U
+Mnmos@15 gnd Q_bar Q gnd nMos L=0.6U W=3.6U AS=5.22P AD=15.42P PS=7.7U PD=24.633U
+Mnmos@16 net@353 net@19 net@197 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@17 gnd net@157 net@353 gnd nMos L=0.6U W=3.6U AS=2.7P AD=15.42P PS=5.1U PD=24.633U
+Mnmos@18 net@391 net@37 net@160 gnd nMos L=0.6U W=3.6U AS=5.22P AD=2.7P PS=7.7U PD=5.1U
+Mnmos@19 gnd net@157 net@391 gnd nMos L=0.6U W=3.6U AS=2.7P AD=15.42P PS=5.1U PD=24.633U
+Mnmos@20 net@412 D gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=7.02P PS=24.633U PD=11.1U
+Mnmos@21 net@157 CLK gnd gnd nMos L=0.6U W=3.6U AS=15.42P AD=7.02P PS=24.633U PD=11.1U
+Mpmos@0 net@9 net@31 vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=7.02P PS=24.033U PD=11.1U
+Mpmos@1 net@0 net@7 vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=7.02P PS=24.033U PD=11.1U
+Mpmos@2 net@49 net@9 net@37 vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@3 vdd net@19 net@49 vdd pMos L=0.6U W=3.6U AS=2.16P AD=14.97P PS=4.8U PD=24.033U
+Mpmos@4 net@106 net@0 net@19 vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@5 vdd net@37 net@106 vdd pMos L=0.6U W=3.6U AS=2.16P AD=14.97P PS=4.8U PD=24.033U
+Mpmos@6 net@31 D vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=5.22P PS=24.033U PD=7.7U
+Mpmos@7 vdd CLK net@31 vdd pMos L=0.6U W=3.6U AS=5.22P AD=14.97P PS=7.7U PD=24.033U
+Mpmos@8 net@7 net@412 vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=5.22P PS=24.033U PD=7.7U
+Mpmos@9 vdd CLK net@7 vdd pMos L=0.6U W=3.6U AS=5.22P AD=14.97P PS=7.7U PD=24.033U
+Mpmos@10 net@162 net@197 vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=7.02P PS=24.033U PD=11.1U
+Mpmos@11 net@153 net@160 vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=7.02P PS=24.033U PD=11.1U
+Mpmos@12 net@218 net@162 Q_bar vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@13 vdd Q net@218 vdd pMos L=0.6U W=3.6U AS=2.16P AD=14.97P PS=4.8U PD=24.033U
+Mpmos@14 net@283 net@153 Q vdd pMos L=0.6U W=3.6U AS=5.22P AD=2.16P PS=7.7U PD=4.8U
+Mpmos@15 vdd Q_bar net@283 vdd pMos L=0.6U W=3.6U AS=2.16P AD=14.97P PS=4.8U PD=24.033U
+Mpmos@16 net@197 net@19 vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=5.22P PS=24.033U PD=7.7U
+Mpmos@17 vdd net@157 net@197 vdd pMos L=0.6U W=3.6U AS=5.22P AD=14.97P PS=7.7U PD=24.033U
+Mpmos@18 net@160 net@37 vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=5.22P PS=24.033U PD=7.7U
+Mpmos@19 vdd net@157 net@160 vdd pMos L=0.6U W=3.6U AS=5.22P AD=14.97P PS=7.7U PD=24.033U
+Mpmos@20 net@412 D vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=7.02P PS=24.033U PD=11.1U
+Mpmos@21 net@157 CLK vdd vdd pMos L=0.6U W=3.6U AS=14.97P AD=7.02P PS=24.033U PD=11.1U
+
+* Spice Code nodes in cell cell 'D_FlipFlop{lay}'
+vdd VDD 0 DC 1.1
+vin CLK 0 PULSE(0 1.1 0n 1n 1n 20n 40n 20)
+vin2 D 0 PWL(0 0 59n 0 60n 1.1 70n 1.1 71n 0) 
+cload Q 0 50fF
+cload1 Q_bar 0 50fF
+.tran 0 160n 
+.include C:\Users\NOR0185869\Downloads\Tech_models.txt
+.END

@@ -1,0 +1,80 @@
+*** SPICE deck for cell SRAM2x2{lay} from library Project
+*** Created on Tue May 30, 2023 16:49:53
+*** Last revised on Tue May 30, 2023 17:22:17
+*** Written on Tue May 30, 2023 17:22:36 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: SRAM2x2{lay}
+Mnmos@0 Bit0 Write Data0 gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@1 Q0 WL3 Bit0 gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@2 gnd Q0 Q0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=41.076P PS=11.1U PD=56.94U
+Mnmos@3 Q0 Q0_bar gnd gnd nMos L=0.6U W=3.6U AS=41.076P AD=7.02P PS=56.94U PD=11.1U
+Mnmos@4 Bit0_bar WL3 Q0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@5 Data0_bar Write Bit0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@6 net@9 Bit0 Bit0_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mnmos@7 Bit0 Bit0_bar net@9 gnd nMos L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mnmos@8 net@9 SE_bar gnd gnd nMos L=0.6U W=3.6U AS=41.076P AD=5.22P PS=56.94U PD=7.7U
+Mnmos@9 Q1 WL1 Bit0 gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@10 gnd Q1 Q1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=41.076P PS=11.1U PD=56.94U
+Mnmos@11 Q1 Q1_bar gnd gnd nMos L=0.6U W=3.6U AS=41.076P AD=7.02P PS=56.94U PD=11.1U
+Mnmos@12 Bit0_bar WL1 Q1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@26 Bit1 Write Data1 gnd nMos L=0.6U W=3.6U AS=7.02P AD=6.84P PS=11.1U PD=11U
+Mnmos@27 Q2 WL3 Bit1 gnd nMos L=0.6U W=3.6U AS=6.84P AD=7.02P PS=11U PD=11.1U
+Mnmos@28 gnd Q2 Q2_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=41.076P PS=11.1U PD=56.94U
+Mnmos@29 Q2 Q2_bar gnd gnd nMos L=0.6U W=3.6U AS=41.076P AD=7.02P PS=56.94U PD=11.1U
+Mnmos@30 Bit1_bar WL3 Q2_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@31 Data1_bar Write Bit1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@32 net@481 Bit1 Bit1_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mnmos@33 Bit1 Bit1_bar net@481 gnd nMos L=0.6U W=3.6U AS=5.22P AD=6.84P PS=7.7U PD=11U
+Mnmos@34 net@481 SE_bar gnd gnd nMos L=0.6U W=3.6U AS=41.076P AD=5.22P PS=56.94U PD=7.7U
+Mnmos@35 Q3 WL1 Bit1 gnd nMos L=0.6U W=3.6U AS=6.84P AD=7.02P PS=11U PD=11.1U
+Mnmos@36 gnd Q3 Q4_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=41.076P PS=11.1U PD=56.94U
+Mnmos@37 Q3 Q4_bar gnd gnd nMos L=0.6U W=3.6U AS=41.076P AD=7.02P PS=56.94U PD=11.1U
+Mnmos@38 Bit1_bar WL1 Q4_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mpmos@0 vdd PC Bit0 vdd pMos L=0.6U W=3.6U AS=7.02P AD=28.697P PS=11.1U PD=35.486U
+Mpmos@1 vdd Q0 Q0_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=28.697P PS=11.1U PD=35.486U
+Mpmos@2 Q0 Q0_bar vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=7.02P PS=35.486U PD=11.1U
+Mpmos@3 Bit0_bar PC vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=7.02P PS=35.486U PD=11.1U
+Mpmos@4 net@5 SE vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=5.22P PS=35.486U PD=7.7U
+Mpmos@5 net@5 Bit0 Bit0_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@6 Bit0 Bit0_bar net@5 vdd pMos L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@7 vdd Q1 Q1_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=28.697P PS=11.1U PD=35.486U
+Mpmos@8 Q1 Q1_bar vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=7.02P PS=35.486U PD=11.1U
+Mpmos@18 vdd PC Bit1 vdd pMos L=0.6U W=3.6U AS=6.84P AD=28.697P PS=11U PD=35.486U
+Mpmos@19 vdd Q2 Q2_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=28.697P PS=11.1U PD=35.486U
+Mpmos@20 Q2 Q2_bar vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=7.02P PS=35.486U PD=11.1U
+Mpmos@21 Bit1_bar PC vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=7.02P PS=35.486U PD=11.1U
+Mpmos@22 net@477 SE vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=5.22P PS=35.486U PD=7.7U
+Mpmos@23 net@477 Bit1 Bit1_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@24 Bit1 Bit1_bar net@477 vdd pMos L=0.6U W=3.6U AS=5.22P AD=6.84P PS=7.7U PD=11U
+Mpmos@25 vdd Q3 Q4_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=28.697P PS=11.1U PD=35.486U
+Mpmos@26 Q3 Q4_bar vdd vdd pMos L=0.6U W=3.6U AS=28.697P AD=7.02P PS=35.486U PD=11.1U
+
+* Spice Code nodes in cell cell 'SRAM2x2{lay}'
+vdd VDD 0 DC 1.1
+vin Data0 0 PULSE(1.1 0 0 1n 1n 25n 50n)
+vin1 Data0_bar 0 PULSE(0 1.1 0 1n 1n 25n 50n)
+ vin2 WL0 0 PULSE(0 1.1 1.5n 100p 100p 1.25n 12.5n 100)
+vin3 WL1 0 PULSE(0 1.1 4.5n 100p 100p 1.25n 12.5n 100)
+vin4 PC 0 PULSE(1.1 0 0 100p 100p 2.5n 25n 100)
+vin5 Write 0 PULSE(0 1.1 4n 100p 100p 1.25n 12.5n) 
+vin6 SE 0 PULSE(0 1.1 2n 100p 100p 750p 25n)
+vin7 SE_bar 0 PULSE(1.1 0 2n 100p 100p 750p 25n)
+vin8 Data1 0 PULSE(1.1 0 0 1n 1n 50n 100n)
+vin9 Data1_bar 0 PULSE(0 1.1 0 1n 1n 50n 100n)
+cload Q0 0 100fF
+cload2 Q0_bar 0 100fF
+cload3 Bit0 0 100fF
+cload4 Bit0_bar 0 100fF
+cload5 Q1 0 100fF
+cload6 Q1_bar 0 100fF
+cload7 Q2 0 100fF
+cload8 Q2_bar 0 100fF
+cload9 Bit1 0 100fF
+cload10 Bit1_bar 0 100fF
+cload11 Q3 0 100fF
+cload12 Q3_bar 0 100fF
+.tran 0 100n 
+.include C:\Users\NOR0185869\Downloads\Tech_models.txt
+.END

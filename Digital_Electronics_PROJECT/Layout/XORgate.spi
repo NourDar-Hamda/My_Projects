@@ -1,0 +1,40 @@
+*** SPICE deck for cell XORgate{lay} from library Project
+*** Created on Mon May 29, 2023 21:09:50
+*** Last revised on Mon May 29, 2023 23:06:33
+*** Written on Mon May 29, 2023 23:06:49 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: XORgate{lay}
+Mnmos@18 net@293 IN1 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=7.02P PS=27.367U PD=11.1U
+Mnmos@19 net@306 IN2 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=7.02P PS=27.367U PD=11.1U
+Mnmos@20 net@336 IN2 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=2.7P PS=27.367U PD=5.1U
+Mnmos@21 net@316 net@293 net@336 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@22 net@351 net@316 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=7.02P PS=27.367U PD=11.1U
+Mnmos@23 net@387 net@306 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=2.7P PS=27.367U PD=5.1U
+Mnmos@24 net@367 IN1 net@387 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@25 net@402 net@367 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=7.02P PS=27.367U PD=11.1U
+Mnmos@26 net@418 net@402 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=5.22P PS=27.367U PD=7.7U
+Mnmos@27 gnd net@351 net@418 gnd nMos L=0.6U W=3.6U AS=5.22P AD=17.22P PS=7.7U PD=27.367U
+Mnmos@28 OUT net@418 gnd gnd nMos L=0.6U W=3.6U AS=17.22P AD=7.02P PS=27.367U PD=11.1U
+Mpmos@18 net@293 IN1 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=7.02P PS=24.72U PD=11.1U
+Mpmos@19 net@306 IN2 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=7.02P PS=24.72U PD=11.1U
+Mpmos@20 net@316 IN2 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=5.58P PS=24.72U PD=7.9U
+Mpmos@21 vdd net@293 net@316 vdd pMos L=0.6U W=3.6U AS=5.58P AD=15.435P PS=7.9U PD=24.72U
+Mpmos@22 net@351 net@316 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=7.02P PS=24.72U PD=11.1U
+Mpmos@23 net@367 net@306 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=5.58P PS=24.72U PD=7.9U
+Mpmos@24 vdd IN1 net@367 vdd pMos L=0.6U W=3.6U AS=5.58P AD=15.435P PS=7.9U PD=24.72U
+Mpmos@25 net@402 net@367 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=7.02P PS=24.72U PD=11.1U
+Mpmos@26 net@427 net@402 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=2.7P PS=24.72U PD=5.1U
+Mpmos@27 net@418 net@351 net@427 vdd pMos L=0.6U W=3.6U AS=2.7P AD=5.22P PS=5.1U PD=7.7U
+Mpmos@28 OUT net@418 vdd vdd pMos L=0.6U W=3.6U AS=15.435P AD=7.02P PS=24.72U PD=11.1U
+
+* Spice Code nodes in cell cell 'XORgate{lay}'
+vdd VDD 0 DC 1.1
+vin IN1 0 PULSE(0 1.1 0n 1n 1n 20n 40n 10)
+vin1 IN2 0 PULSE(0 1.1 0n 1n 1n 40n 80n 10)
+cload OUT 0 5fF
+.tran 0 160n
+.include C:\Users\NOR0185869\Downloads\Tech_models.txt
+.END
+.END

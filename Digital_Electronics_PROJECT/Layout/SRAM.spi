@@ -1,0 +1,41 @@
+*** SPICE deck for cell SRAM{lay} from library Project
+*** Created on Tue May 30, 2023 00:12:52
+*** Last revised on Tue May 30, 2023 16:18:07
+*** Written on Tue May 30, 2023 16:18:18 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: Project:SRAM{lay}
+Mnmos@0 Bit Write Data gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@1 Q WL Bit gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@2 gnd Q Q_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=43.08P PS=11.1U PD=59.9U
+Mnmos@3 Q Q_bar gnd gnd nMos L=0.6U W=3.6U AS=43.08P AD=7.02P PS=59.9U PD=11.1U
+Mnmos@4 Bit_bar WL Q_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@5 Data_bar Write Bit_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mnmos@6 net@124 Bit Bit_bar gnd nMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mnmos@7 Bit Bit_bar net@124 gnd nMos L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mnmos@8 net@124 SE gnd gnd nMos L=0.6U W=3.6U AS=43.08P AD=5.22P PS=59.9U PD=7.7U
+Mpmos@0 vdd PC Bit vdd pMos L=0.6U W=3.6U AS=7.02P AD=27.54P PS=11.1U PD=34.5U
+Mpmos@1 vdd Q Q_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=27.54P PS=11.1U PD=34.5U
+Mpmos@2 Q Q_bar vdd vdd pMos L=0.6U W=3.6U AS=27.54P AD=7.02P PS=34.5U PD=11.1U
+Mpmos@3 Bit_bar PC vdd vdd pMos L=0.6U W=3.6U AS=27.54P AD=7.02P PS=34.5U PD=11.1U
+Mpmos@4 net@113 SE_bar vdd vdd pMos L=0.6U W=3.6U AS=27.54P AD=5.22P PS=34.5U PD=7.7U
+Mpmos@5 net@113 Bit Bit_bar vdd pMos L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@6 Bit Bit_bar net@113 vdd pMos L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+
+* Spice Code nodes in cell cell 'Project:SRAM{lay}'
+vdd VDD 0 DC 1.1
+vin Data 0 PULSE(1.1 0 0 1n 1n 10n 20n)
+vin2 Data_bar 0 PULSE(0 1.1 0 1n 1n 10n 20n) 
+vin3 WL 0 PULSE(0 1.1 1.5n 100p 100p 500p 5n 100) 
+vin4 PC 0 PULSE(1.1 0 0 100p 100p 1n 10n 100)
+vin5 Write 0 PULSE(0 1.1 4n 100p 100p 500p 10n) 
+vin6 SE 0 PULSE(0 1.1 2n 100p 100p 300p 10n)
+vin7 SE_bar 0 PULSE(1.1 0 2n 100p 100p 300p 10n) 
+cload Q 0 100fF
+cload2 Q_bar 0 100fF
+cload3 Bit 0 100fF
+cload4 Bit_bar 0 100fF
+.tran 0 100n 
+.include C:\Users\NOR0185869\Downloads\Tech_models.txt
+.END

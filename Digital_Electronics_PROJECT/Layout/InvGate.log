@@ -1,0 +1,21 @@
+Circuit: *** SPICE deck for cell InvGate{lay} from library Project
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon May 29 21:56:40 2023
+Total elapsed time: 0.055 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2679
+traniter = 2672
+tranpoints = 1241
+accept = 1176
+rejected = 65
+matrix size = 13
+fillins = 0
+solver = Normal
+Matrix Compiler1: 960 bytes object code size  0.4/0.3/[0.1]
+Matrix Compiler2: 1.32 KB object code size  0.3/0.3/[0.2]
+

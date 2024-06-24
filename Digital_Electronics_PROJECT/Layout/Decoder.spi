@@ -1,0 +1,33 @@
+*** SPICE deck for cell Decoder{lay} from library Project
+*** Created on Mon May 29, 2023 23:12:02
+*** Last revised on Mon May 29, 2023 23:42:53
+*** Written on Mon May 29, 2023 23:43:27 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: Decoder{lay}
+Mnmos@0 net@21 En gnd gnd nMos L=0.6U W=3.6U AS=18.9P AD=2.7P PS=29.94U PD=5.1U
+Mnmos@1 net@1 net@5 net@21 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@2 OUT1 net@1 gnd gnd nMos L=0.6U W=3.6U AS=18.9P AD=7.02P PS=29.94U PD=11.1U
+Mnmos@3 net@72 En gnd gnd nMos L=0.6U W=3.6U AS=18.9P AD=2.7P PS=29.94U PD=5.1U
+Mnmos@4 net@52 ROW# net@72 gnd nMos L=0.6U W=3.6U AS=2.7P AD=5.58P PS=5.1U PD=7.9U
+Mnmos@5 OUT2 net@52 gnd gnd nMos L=0.6U W=3.6U AS=18.9P AD=7.02P PS=29.94U PD=11.1U
+Mnmos@6 net@5 ROW# gnd gnd nMos L=0.6U W=3.6U AS=18.9P AD=7.02P PS=29.94U PD=11.1U
+Mpmos@0 net@1 En vdd vdd pMos L=0.6U W=3.6U AS=14.799P AD=5.58P PS=23.614U PD=7.9U
+Mpmos@1 vdd net@5 net@1 vdd pMos L=0.6U W=3.6U AS=5.58P AD=14.799P PS=7.9U PD=23.614U
+Mpmos@2 OUT1 net@1 vdd vdd pMos L=0.6U W=3.6U AS=14.799P AD=7.02P PS=23.614U PD=11.1U
+Mpmos@3 net@52 En vdd vdd pMos L=0.6U W=3.6U AS=14.799P AD=5.58P PS=23.614U PD=7.9U
+Mpmos@4 vdd ROW# net@52 vdd pMos L=0.6U W=3.6U AS=5.58P AD=14.799P PS=7.9U PD=23.614U
+Mpmos@5 OUT2 net@52 vdd vdd pMos L=0.6U W=3.6U AS=14.799P AD=7.02P PS=23.614U PD=11.1U
+Mpmos@6 net@5 ROW# vdd vdd pMos L=0.6U W=3.6U AS=14.799P AD=7.02P PS=23.614U PD=11.1U
+
+* Spice Code nodes in cell cell 'Decoder{lay}'
+vdd VDD 0 DC 1.1
+vin En 0 PULSE(0 1.1 0n 1n 1n 20n 40n 10)
+vin1 ROW# 0 PULSE(0 1.1 0n 1n 1n 40n 80n 10)
+cload OUT1 0 50fF
+cload1 OUT2 0 50fF
+.tran 0 160n
+.include C:\Users\NOR0185869\Downloads\Tech_models.txt
+.END
+.END
